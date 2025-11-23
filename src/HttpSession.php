@@ -458,7 +458,7 @@ class HttpSession implements ArrayAccess, SessionInterface, IteratorAggregate
      *
      * {@inheritDoc}
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->get($offset);
     }
